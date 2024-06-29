@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation {
+    margin-top: 25px;
+    font-family:var(--font1);
+    height: 74px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-navigation {
+    width: 22.5%;
+    float: left;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(12,12,12,0.9);
+    z-index: 10;
+}
+
+.sidebar-navigation nav {
+    position: relative;
+    top: 60%;
+    left: 60%;
+    transform: translateX(-60%) translateY(-60%);
+}
+
+/* * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+.nav-left{
+    font-size: 35px;
+    display: flex;
+}
+
+.nav-left ul {
+    display: flex;
+    /* align-items: center; */
+    text-align: left;
+    /* margin: 0 77px; */
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 40%;
+    padding-left: 20%;
+}
+
+.nav-left ul li{
+    list-style: none;
+    padding-top: 40%;
+    /* padding-left: 20%; */
+    /* display: inline-block;
+    vertical-align: middle; */
+    /* margin: 0 14px; */
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav-left span a{
+    text-decoration: none;
+    color:white;
+}
+
+/* .nav-left ul li a:hover{
+    color:var(--main-bg-color);
+} */
+
+.content-left{
+    font-family: var(--font1);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    z-index: 1;
+}
+
+.content-right{
+    font-family: var(--font1);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    /* padding: 50px; */
+    z-index: 1;
+}
+
+.content-right img{
+    height: 350px;
+    width: 550px;
+    padding: 30px;
+}
+
+.home-articles{
+    /* height: 455px; */
+    /* padding-top: 12px; */
+    /* background-color: pink; */
+    padding: 18px;
+    margin-top: 23px;
+}
+.home-article{
+    display: flex;
+    padding-top: 20px;
+    /* background-color: aqua; */
+}
+
+.home-article1{
+    display: flex;
+    /* margin-left: 15%; */
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    /* margin: 50px; */
+    /* background-color: aqua; */
+}
+
+.home-article1 img{
+    width: 300px;
+    overflow: hidden;
+}
+
+.block{
+    padding-top: 4%;
+    padding-left: 25%;
+}
+
+.home-article img{
+    width: 300px;
+    overflow: hidden;
+}
+
+.home-article-content{
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a{
+    text-decoration: none;/*removes underline from link*/
+    color: var(--main-bg-color);
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: var(--font2)
+}
+.content-right{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 395px;
+    display: flex;
+    position:relative;
+    /* background-color: blue; */
+}
+
+.content::after{
+    content: "";
+    background-image: url('../img/Luxury-fashion-brand-logos.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+}
+
+/* img{
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+} */
+
+.footer {
+    height: 60px;
+    background-color:var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+}
+
+.footer a{
+    color:white;
+}

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation {
+    margin-top: 25px;
+    font-family:var(--font1);
+    height: 74px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-b input,textarea{
+    width: 15vw;
+    padding: 10px, 6px;
+    margin: 2px 0px;
+    font-size: 18px;
+    font-family: var(--font1);
+    border: 2px solid var(--main-bg-color);
+    border-radius: 5px;
+}
+
+.nav-left{
+    font-size: 35px;
+    display: flex;
+}
+
+.nav-left1{
+    font-size: 35px;
+    display: flex;
+}
+.nav-left1 a{
+    font-size: 35px;
+    display: flex;
+    text-decoration: none;
+    color:black
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+}
+
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.nav-left span a{
+    text-decoration: none;
+    color:black;
+}
+
+.nav-left ul li a:hover{
+    color:var(--main-bg-color);
+}
+
+.content-left{
+    font-family: var(--font1);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8%;
+    z-index: 1;
+    margin-right: 15%;
+}
+
+.content-right img{
+    height: 80%;
+    width: 160%;
+    margin-right: 60%;
+    padding-right: 20%;
+}
+
+.home-articles{
+    /* height: 455px; */
+    /* padding-top: 12px; */
+    /* background-color: pink; */
+    padding: 10vw;
+    margin-top: 20vw;
+}
+.home-article{
+    display: flex;
+    padding: 40px;
+}
+
+.home-article img{
+    width: 20vw;
+}
+
+.home-article-content{
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a{
+    text-decoration: none;/*removes underline from link*/
+    color: var(--main-bg-color);
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: var(--font2)
+}
+.content-right{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    position:relative;
+    /* background-color: blue; */
+}
+
+.content::after{
+    content: "";
+    background-image: url('../img/Luxury-fashion-brand-logos.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+}
+
+img{
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.footer {
+    height: 60px;
+    background-color:var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+}
+
+.footer a{
+    color:white;
+}
