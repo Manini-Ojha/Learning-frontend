@@ -5,7 +5,7 @@ pipeline {
         stage('Copying dir from git to ubuntu instance') {
             steps {
                 sh '''
-                scp -r /var/lib/jenkins/workspace/FashionBlog /var/www/html/website
+                sudo scp -r /var/lib/jenkins/workspace/FashionBlog /var/www/html/website
                 '''
             }
         }
