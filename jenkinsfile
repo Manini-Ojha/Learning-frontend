@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Copying dir from git to ubuntu instance') {
             steps {
-                ssh '''
+                sh '''
                 scp /var/lib/jenkins/workspace/FashionBlog /var/www/html/website
                 '''
             }
         }
         stage('Restarting web server') {
             steps {
-                ssh '''
+                sh '''
                 sudo systemctl restart apache2
                 '''
             }
