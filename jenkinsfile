@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Copying dir from git to ubuntu instance') {
+            steps {
+                ssh '''
+                scp /var/lib/jenkins/workspace/FashionBlog /var/www/html/website
+                '''
+            }
+        }
+        stage('Restarting web server') {
+            steps {
+                ssh '''
+                sudo systemctl restart apache2
+                '''
+            }
+        }
+    }
+}
